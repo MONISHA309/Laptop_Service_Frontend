@@ -34,7 +34,7 @@ function Signup() {
         }
 
 
-        axios.post('https://laptop-service.onrender.com/sign',{name,email,password})
+        axios.post('https://laptop-service-backend.onrender.com/sign',{name,email,password})
         .then(result => {
             console.log(result)
             navigate('/')

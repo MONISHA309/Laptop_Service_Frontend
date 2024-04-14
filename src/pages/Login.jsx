@@ -28,7 +28,7 @@ function Login() {
       }
 
 
-      axios.post('https://laptop-service.onrender.com/',{email,password})
+      axios.post('https://laptop-service-backend.onrender.com/',{email,password})
       .then(result => {
           console.log(result)
           if(result.data === "success"){

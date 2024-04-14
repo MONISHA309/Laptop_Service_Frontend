@@ -49,7 +49,7 @@ function Appointment() {
     }
 
     axios
-      .post('https://laptop-service.onrender.com/appointment', { email, phone, type, date, time, problem })
+      .post('https://laptop-service-backend.onrender.com/appointment', { email, phone, type, date, time, problem })
       .then((result) => {
         console.log(result);
         if (result.data === 'added') {
